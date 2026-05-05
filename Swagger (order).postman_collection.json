@@ -1,0 +1,42 @@
+{
+  "info": {
+    "_postman_id": "c9abaef1-c6b3-4a28-91e9-9da7d283255b",
+    "name": "Swagger (order)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53530965",
+    "_collection_link": "https://go.postman.co/collection/53530965-c9abaef1-c6b3-4a28-91e9-9da7d283255b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Place an order for a pet",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 2222,\r\n    \"petId\": 2222,\r\n    \"quantity\": 123,\r\n    \"shipDate\": \"2026-05-06T16:11:30.321+0000\",\r\n    \"status\": \"placed\",\r\n    \"complete\": \"true\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/store/order",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "store",
+            "order"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
