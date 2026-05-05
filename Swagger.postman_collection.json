@@ -78,10 +78,19 @@
       "response": []
     },
     {
-      "name": "New Request",
+      "name": "Add a new pet to the store",
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 2222,\r\n    \"name\": \"Barsik\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
           "raw": "https://petstore.swagger.io/v2/pet",
           "protocol": "https",
