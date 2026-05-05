@@ -29,7 +29,7 @@
       "response": []
     },
     {
-      "name": "Get a user list",
+      "name": "Get all users",
       "request": {
         "method": "GET",
         "header": [],
@@ -72,6 +72,50 @@
               "key": "status",
               "value": "sold,pending"
             }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all pets",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/pet/",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "pet",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Find pet by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/pet/13",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "pet",
+            "13"
           ]
         }
       },
