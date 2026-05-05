@@ -78,6 +78,68 @@
       "response": []
     },
     {
+      "name": "Update an existing pet",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 2222,\r\n    \"name\": \"Bart\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/pet/",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "pet",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deleted pet by id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 2222,\r\n    \"name\": \"Bart\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/pet/2222",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "pet",
+            "2222"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
       "name": "Get all pets",
       "request": {
         "method": "GET",
@@ -105,7 +167,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://petstore.swagger.io/v2/pet/13",
+          "raw": "https://petstore.swagger.io/v2/pet/2222",
           "protocol": "https",
           "host": [
             "petstore",
@@ -115,7 +177,7 @@
           "path": [
             "v2",
             "pet",
-            "13"
+            "2222"
           ]
         }
       },
@@ -169,6 +231,14 @@
             "4"
           ]
         }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
       },
       "response": []
     }
