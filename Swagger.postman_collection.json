@@ -50,7 +50,7 @@
       "response": []
     },
     {
-      "name": "Get pets",
+      "name": "Find pets by status",
       "request": {
         "method": "GET",
         "header": [],
