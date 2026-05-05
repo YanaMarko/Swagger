@@ -36,7 +36,7 @@
       "response": []
     },
     {
-      "name": "Update an existing pet",
+      "name": "Update pet",
       "request": {
         "method": "PUT",
         "header": [],
@@ -120,7 +120,7 @@
       "response": []
     },
     {
-      "name": "Add a new pet to the store",
+      "name": "Add a new pet",
       "request": {
         "method": "POST",
         "header": [],
@@ -150,7 +150,7 @@
       "response": []
     },
     {
-      "name": "Find pet by ID",
+      "name": "Find pet by id",
       "request": {
         "method": "GET",
         "header": [],

@@ -8,13 +8,13 @@
   },
   "item": [
     {
-      "name": "Place an order for a pet",
+      "name": "Create an order",
       "request": {
         "method": "POST",
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"id\": 2222,\r\n    \"petId\": 2222,\r\n    \"quantity\": 123,\r\n    \"shipDate\": \"2026-05-06T16:11:30.321+0000\",\r\n    \"status\": \"placed\",\r\n    \"complete\": \"true\"\r\n}",
+          "raw": "{\r\n    \"id\": 1234,\r\n    \"petId\": 2222,\r\n    \"quantity\": 123,\r\n    \"shipDate\": \"2026-05-06T16:11:30.321+0000\",\r\n    \"status\": \"placed\",\r\n    \"complete\": \"true\"\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -33,6 +33,41 @@
             "v2",
             "store",
             "order"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Find order by id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 2222,\r\n    \"petId\": 2222,\r\n    \"quantity\": 123,\r\n    \"shipDate\": \"2026-05-06T16:11:30.321+0000\",\r\n    \"status\": \"placed\",\r\n    \"complete\": \"true\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/store/order/1234",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "store",
+            "order",
+            "1234"
           ]
         }
       },
