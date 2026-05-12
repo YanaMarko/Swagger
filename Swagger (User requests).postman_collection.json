@@ -50,6 +50,36 @@
       "response": []
     },
     {
+      "name": "Create user",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 777,\r\n    \"username\": \"root\",\r\n    \"fistName\": \"Yana\",\r\n    \"lastName\": \"Markova\",\r\n    \"email\": \"root@free-ya.ru\",\r\n    \"password\": \"qwerty123\",\r\n    \"status\": \"1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/user",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
       "name": "Update user",
       "request": {
         "method": "PUT",
