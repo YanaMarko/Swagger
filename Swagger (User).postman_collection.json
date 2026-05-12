@@ -80,6 +80,37 @@
       "response": []
     },
     {
+      "name": "Create a user list",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n    \"id\": 777,\r\n    \"username\": \"root\",\r\n    \"firstName\": \"Yana\",\r\n    \"lastName\": \"Markova\",\r\n    \"email\": \"root@free-ya.ru\",\r\n    \"password\": \"qwerty123\",\r\n    \"status\": \"1\" \r\n    },\r\n    {\r\n    \"id\": 644,\r\n    \"username\": \"admin\",\r\n    \"firstName\": \"Test\",\r\n    \"lastName\": \"Markova\",\r\n    \"email\": \"admin@free-ya.ru\",\r\n    \"password\": \"123qwerty\",\r\n    \"status\": \"0\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/user/createWithList",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "user",
+            "createWithList"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
       "name": "Get new user by username",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
@@ -97,7 +128,7 @@
           }
         },
         "url": {
-          "raw": "https://petstore.swagger.io/v2/user/root",
+          "raw": "https://petstore.swagger.io/v2/user/admin",
           "protocol": "https",
           "host": [
             "petstore",
@@ -107,7 +138,7 @@
           "path": [
             "v2",
             "user",
-            "root"
+            "admin"
           ]
         }
       },
