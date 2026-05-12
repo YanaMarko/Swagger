@@ -111,7 +111,7 @@
       "response": []
     },
     {
-      "name": "Get new user by username",
+      "name": "Get user by username",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -120,7 +120,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"id\": 777,\r\n    \"username\": \"root\",\r\n    \"fistName\": \"Yana\",\r\n    \"lastName\": \"Markova\",\r\n    \"email\": \"root@free-ya.ru\",\r\n    \"password\": \"qwerty123\",\r\n    \"status\": \"1\"\r\n}",
+          "raw": "",
           "options": {
             "raw": {
               "language": "json"
@@ -160,6 +160,38 @@
             "api",
             "users",
             "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Logs user into the system",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/user/login?username=Yana&password=qwerty123",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "user",
+            "login"
+          ],
+          "query": [
+            {
+              "key": "username",
+              "value": "Yana"
+            },
+            {
+              "key": "password",
+              "value": "qwerty123"
+            }
           ]
         }
       },
